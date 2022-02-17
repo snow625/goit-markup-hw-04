@@ -293,7 +293,7 @@ img {
 }
 .team-text {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 .team .title {
   margin-top: 0;
@@ -308,6 +308,9 @@ img {
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19;
+}
+.team-social {
+  margin-bottom: 30px;
 }
 /* social-link */
 .team-social-list {
@@ -394,6 +397,7 @@ img {
 .social-links {
   padding-left: 0;
   display: flex;
+  justify-content: center;
 }
 .social-links > .item:not(:last-child) {
   margin-right: 10px;
