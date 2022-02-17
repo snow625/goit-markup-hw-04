@@ -146,12 +146,12 @@ img {
   margin-right: 10px;
   fill: var(--primery-text-color);
 }
-.contacts-icon:hover {
-  fill: var(--accent-text-color);
+
 }
 .contacts > .item {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .contacts .link {
   color: var(--primery-text-color);
@@ -159,12 +159,17 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  /* border: 2px solid tomato; */
 }
 .contacts .link:focus,
 .contacts .link:hover {
   color: var(--accent-text-color);
+  fill: var(--accent-text-color);
 }
+
+/* .contacts a:hover {
+  color: #2196f3;
+  fill: red;
+} */
 
 /* hero */
 .hero {
@@ -175,7 +180,7 @@ img {
 
   /* backgroung hero */
   max-width: 1600px;
-  height: 600px;
+
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
