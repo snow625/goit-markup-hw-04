@@ -146,6 +146,9 @@ img {
   margin-right: 10px;
   fill: var(--primery-text-color);
 }
+.contacts-icon:hover {
+  fill: var(--accent-text-color);
+}
 .contacts > .item {
   display: flex;
   align-items: center;
