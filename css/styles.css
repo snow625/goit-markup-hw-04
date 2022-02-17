@@ -9,6 +9,8 @@
   --background-alt-color: #f5f4fa;
   --border-color: #ececec;
   --border-color-second: #eeeeee;
+
+  --icon-fill-color-primary: #afb1b8;
 }
 body {
   background-color: var(--background-white-color);
@@ -131,6 +133,23 @@ img {
 .contacts > .item:not(:last-child) {
   margin-right: 50px;
 }
+
+/* иконки для heared */
+.contacts-icon.mail {
+  width: 16px;
+  height: 12px;
+}
+.contacts-icon {
+  /* display: inline-flex; */
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--primery-text-color);
+}
+.contacts > .item {
+  display: flex;
+  align-items: center;
+}
 .contacts .link {
   color: var(--primery-text-color);
   font-weight: 500;
@@ -150,7 +169,19 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--background-black-color);
+
+  /* backgroung hero */
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 .hero-title {
   width: 696px;
   margin-left: auto;
@@ -188,11 +219,29 @@ img {
   margin: 0;
   padding: 0;
 }
+.advantage-icon-place {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  /* border: 2px solid tomato; */
+  margin-bottom: 30px;
+  background-color: var(--background-alt-color);
+  border-radius: 4px;
+}
 .advantage > .item {
   min-width: 270px;
 }
 .advantage > .item:not(:last-child) {
   margin-right: 30px;
+}
+
+/* advantage-icon Иконки */
+.advantage-icon {
+  height: 70px;
+  width: 70px;
 }
 
 .advantage .title {
@@ -257,7 +306,16 @@ img {
   font-size: 16px;
   line-height: 1.19;
 }
-
+/* social-link */
+.team-social-list {
+  padding-left: 0;
+}
+.team-social .social-list-icon {
+  fill: var(--icon-fill-color-primary);
+}
+.team-social .social-list-icon:hover {
+  fill: var(--background-white-color);
+}
 /* Кнопка!!! */
 .button {
   padding: 6px 22px;
@@ -277,7 +335,7 @@ img {
   color: var(--background-white-color);
   background-color: var(--accent-text-color);
 }
-.button.hero {
+.button.herov {
   padding: 10px 32px;
   color: var(--background-white-color);
   background-color: var(--accent-text-color);
@@ -322,6 +380,81 @@ img {
 .address .link:focus {
   color: var(--accent-text-color);
 }
+/* Присоединяйтесь! */
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-links {
+  margin-left: 70px;
+}
+.social-links {
+  padding-left: 0;
+  display: flex;
+}
+.social-links > .item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-list-place {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--background-white-color);
+}
+.social-list-place:hover {
+  background-color: var(--accent-text-color);
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+/* Постоянные клиенты */
+.footer-links .title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+  color: var(--background-white-color);
+}
+.clients-list {
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+}
+.clients-list > .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list-place {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-fill-color-primary);
+  fill: var(--icon-fill-color-primary);
+  border-radius: 4px;
+  /* outline: 2px solid tomato; */
+}
+
+.clients-list-place:hover {
+  border: 1px solid var(--accent-text-color);
+  fill: var(--accent-text-color);
+}
+
+.clients-list-icon {
+  height: 60px;
+  width: 106px;
+}
 
 /* Страница Портфолио */
 .section .filtr {
@@ -351,6 +484,11 @@ img {
 }
 .projects > .item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
+}
+/* добавляет тень при наведении на карточку */
+.projects > .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-text-name {
