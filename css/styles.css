@@ -474,7 +474,7 @@ img {
   color: var(--background-white-color);
   border-radius: 50%;
 }
-
+.social-links-icon.new:focus,
 .social-links-icon.new:hover {
   color: var(--background-white-color);
   background-color: var(--accent-text-color);
